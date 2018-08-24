@@ -8,6 +8,12 @@ A simple client for the simple API.
 npm run build
 ```
 
+## Testing
+
+```
+npm test
+```
+
 ## Usage
 
 The entrypoint to the client is a factory, which returns an API object when provided with an API base URL.
