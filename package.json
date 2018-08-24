@@ -1,0 +1,22 @@
+{
+  "name": "teamsdb-client",
+  "version": "1.0.0",
+  "description": "The client for the TeamsDB API",
+  "main": "dist/lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress"
+  },
+  "author": "Dmitrii Fontanov <spukst3r@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-dependencies": "^2.4.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
