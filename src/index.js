@@ -1,11 +1,11 @@
-function makeUrl(base = 'http://localhost') {
+export function makeUrl(base = 'http://localhost') {
   return new URL('api/v1', base).toString();
 }
 
-const endpoint = (baseUrl, resource) => (id, method) => `${baseUrl}/${resource}/${id}/${method}`;
+export const endpoint = (baseUrl, resource) => (id, method) => `${baseUrl}/${resource}/${id}/${method}`;
 
 
-async function handleResponse(response) {
+export async function handleResponse(response) {
   if (!response.ok) {
     if (response.status >= 500) {
       throw new Error(`Server responded with non-ok code: ${response.status}`);
@@ -20,13 +20,11 @@ async function handleResponse(response) {
 }
 
 
-function team(baseUrl) {
+export function team(baseUrl) {
   const url = endpoint(baseUrl, 'teams');
 
   return id => ({
     getMembers() {
-      console.log(url(id, 'members'));
-
       return fetch(url(id, 'members'))
         .then(handleResponse);
     },
@@ -34,7 +32,7 @@ function team(baseUrl) {
 }
 
 
-function people(baseUrl) {
+export function people(baseUrl) {
   const url = endpoint(baseUrl, 'people');
 
   return id => ({
@@ -46,7 +44,7 @@ function people(baseUrl) {
 }
 
 
-function clientFactory({ url }) {
+export function clientFactory({ url }) {
   const base = makeUrl(url);
 
   return {

@@ -5,9 +5,11 @@ extends:
 
 env:
   browser: 1
+  jest: 1
 
 plugins:
   - dependencies
+  - jest
 
 settings:
   import/resolver: webpack
