@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/spukst3r/teamsdb-client.svg?branch=master)](https://travis-ci.org/spukst3r/teamsdb-client)
+
 # :fire: TeamsDB-client :eyes:
 
 A simple client for the simple API.
