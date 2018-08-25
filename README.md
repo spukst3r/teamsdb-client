@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/spukst3r/teamsdb-client.svg?branch=master)](https://travis-ci.org/spukst3r/teamsdb-client)
+[![dependencies](https://david-dm.org/spukst3r/teamsdb-client.svg)](https://david-dm.org/spukst3r/teamsdb-client)
 
 # :fire: TeamsDB-client :eyes:
 
